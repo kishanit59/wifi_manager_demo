@@ -5,27 +5,7 @@ A secure, modern web application for managing Wi-Fi passwords with GitHub authen
 ## Setup Instructions
 
 
-### 1. Supabase Configuration
-
-After connecting to Supabase, you need to enable GitHub OAuth:
-
-1. Go to your [Supabase Dashboard](https://supabase.com/dashboard)
-2. Select your project
-3. Navigate to **Authentication** → **Providers**
-4. Find **GitHub** in the list and click **Enable**
-5. You'll need to configure GitHub OAuth:
-   - Go to [GitHub Settings](https://github.com/settings/developers)
-   - Click **New OAuth App**
-   - Fill in the application details:
-     - **Application name**: WiFi Password Manager
-     - **Homepage URL**: `https://your-domain.com` (or `http://localhost:5173` for development)
-     - **Authorization callback URL**: `https://your-project-ref.supabase.co/auth/v1/callback`
-   - Click **Register application**
-   - Copy the **Client ID** and generate a **Client Secret**
-6. Back in Supabase, paste the Client ID and Client Secret
-7. Save the configuration
-
-### 2. Database Setup
+### 1. Database Setup
 
 The application requires a `wifi_networks` table. Create it with this SQL:
 
@@ -73,17 +53,7 @@ CREATE TRIGGER update_wifi_networks_updated_at
   EXECUTE FUNCTION update_updated_at_column();
 ```
 
-### 3. Environment Variables
-
-Make sure your `.env` file contains:
-
-```
-VITE_SUPABASE_URL=your_supabase_project_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-VITE_ENCRYPTION_KEY=your_32_character_encryption_key
-```
-
-### 4. Running the Application
+### 2. Running the Application
 
 ```bash
 npm run dev
@@ -91,10 +61,8 @@ npm run dev
 
 ## Features
 
-- 🔐 GitHub OAuth authentication
 - 🔒 End-to-end password encryption
 - 📱 Fully responsive design
-- 🌙 Dark/Light mode support
 - 📋 Copy passwords to clipboard
 - 📱 QR code generation for easy sharing
 - 🔍 Search and filter networks
@@ -104,7 +72,6 @@ npm run dev
 
 - All passwords are encrypted using AES encryption before storage
 - Row Level Security (RLS) ensures users can only access their own data
-- GitHub OAuth provides secure authentication
 - No passwords are stored in plain text
 
 ## 📸 Project Screenshot
