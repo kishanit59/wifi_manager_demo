@@ -1,6 +1,6 @@
 # WiFi Password Manager
 
-A secure, modern web application for managing Wi-Fi passwords with GitHub authentication and end-to-end encryption.
+A secure and modern web application for managing Wi-Fi passwords, featuring user authentication with sign-up, login, logout, and end-to-end encryption.
 
 ## Setup Instructions
 
