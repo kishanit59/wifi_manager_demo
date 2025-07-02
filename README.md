@@ -4,9 +4,6 @@ A secure, modern web application for managing Wi-Fi passwords with GitHub authen
 
 ## Setup Instructions
 
-## 🖼️ Project Preview
-
-![WiFi Password Manager Screenshot](https://raw.githubusercontent.com/kishanit59/wifi_manager_demo/refs/heads/main/Screenshot%20from%202025-07-03%2000-14-54.png)
 
 ### 1. Supabase Configuration
 
@@ -109,3 +106,13 @@ npm run dev
 - Row Level Security (RLS) ensures users can only access their own data
 - GitHub OAuth provides secure authentication
 - No passwords are stored in plain text
+
+## 📸 Project Screenshot
+
+![WiFi Password Manager Screenshot](https://raw.githubusercontent.com/kishanit59/wifi_manager_demo/refs/heads/main/Screenshot%20from%202025-07-03%2000-14-54.png)
+
+![WiFi Password Manager Screenshot](https://raw.githubusercontent.com/kishanit59/wifi_manager_demo/refs/heads/main/Screenshot%20from%202025-07-03%2000-24-14.png)
+
+![WiFi Password Manager Screenshot](https://raw.githubusercontent.com/kishanit59/wifi_manager_demo/refs/heads/main/Screenshot%20from%202025-07-03%2000-25-51.png)
+
+![WiFi Password Manager Screenshot](https://raw.githubusercontent.com/kishanit59/wifi_manager_demo/refs/heads/main/Screenshot%20from%202025-07-03%2000-26-03.png)
